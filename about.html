@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <META http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta content="Anymood是北京任何情绪文化传播有限公司旗下的男士护肤品牌，以自然服帖的男士修颜产品闻名。团队主创来自于著名化妆品电商上市公司,秉承For Man For All Man的研发理念，依托世界顶级化妆品制造商Intercos，以及瑞士CRB研发中心，坚信爱美不是女权，是人权，致力于打造真正适合男性的护肤产品。比轩谛好,比尊蓝好，比欧莱雅好" name="Description" />
+    <meta content="男士BB霜,男士洁面乳,男士护肤,男士化妆,勇敢在一起,小麦色,裸妆" name="Keywords" />
+    <meta content="Anymood男士口牌下目前有调色BB霜，单色BB霜，补妆吸油纸，男士洁面膏等男士专业产品，发布了勇敢在一起品牌形象视频" name="searchtitle" />
+    <meta content="all" name="robots" />
+    <meta name="renderer" content="webkit">
+    <title>HUGESMEE官网—男士不凡生活新主张</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <style type="text/css">
+        body{
+            /*font-family: "黑体"*/
+        }
+        .menu_bg{
+            position: fixed;
+            width:100%;
+            height: 60px;
+            z-index: 998;
+            background: white;
+            filter:alpha(opacity=60);
+            -moz-opacity:0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+            /*border:1px red  solid;*/
+        }
+        .menu ul{
+            position: fixed;
+            right:0;
+            top:0;
+            padding:0 0 0 0;
+            height: 30px;
+            /*background: #EEEEEE*/
+            width: 100%;
+            z-index: 999;
+            /*background: #CCCCCC;*/
+        }
+        .menu ul li{
+            float:right;
+            width: 100px;
+            list-style: none;
+            text-align: center;
+            padding:5px;
+            margin-right:15px ;
+        }
+        .menu ul li:hover{
+            border-bottom: 2px black solid;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .active{
+            border-bottom: 2px black solid;
+        }
+        .item {
+            position: relative;
+            padding-bottom: 58.97%;
+            width: 100%;
+            height: 0;
+            background:url(images/stone.png)  fixed center center no-repeat;
+            background-size:cover;
+            border:1px white solid;
+            background-attachment:scroll;
+            z-index: -3;
+        }
+        .sp {
+            position: relative;
+            padding-bottom: 47.97%;
+            width: 100%;
+            height: 0;
+            background:url(images/sp_bj.png)  fixed center center no-repeat;
+            background-size:cover;
+            border:1px white solid;
+            margin-bottom: 100px;
+        }
+        .logo{
+            position: relative;
+            margin-top: 300px;
+            width: 150px
+        }
+        .item1{
+            height:auto;
+            background: #FFFFFF;
+            padding:70px 0 70px 0 ;
+        }
+        .product_title{
+            color:#4d4d4d;
+        }
+        .product_sub_tiltle{
+            color:#979797;line-height:30px;margin-top:70px
+        }
+        .about_title{
+            color:#979797;
+            border: lighter;
+            font-size: 5em;
+        }
+        .about_sub_tiltle{
+            color:#4d4d4d;line-height:30px;margin-top:70px
+        }
+        .mb{
+            -webkit-text-shadow:#F9F9F9 1px 0 0,#F9F9F9 0 1px 0,#F9F9F9 -1px 0 0,#F9F9F9 0 -1px 0;
+            -moz-text-shadow:#F9F9F9 1px 0 0,#F9F9F9 0 1px 0,#F9F9F9 -1px 0 0,#F9F9F9 0 -1px 0;
+            text-shadow:#F9F9F9 1px 0 0,#F9F9F9 0 1px 0,#F9F9F9 -1px 0 0,#F9F9F9 0 -1px 0;
+            *filter: Glow(Color=#000, Strength=1);
+        }
+        .sp_player{
+            margin-top: 4em;
+        }
+        .bottom{
+            color:#707070;
+        }
+        .h1{font-size: 3em;}
+        .price{font-size: 4em;color:#bb9f77;}
+        .button{width: 12%;background: black;height: 40px;line-height: 40px;color:white;float: auto;margin-top: 30px;cursor: pointer;}
+        /*视差滚动两个容器*/
+        #i1{z-index: 0;position: relative;}
+        #i2{z-index: 997;height: auto;position: relative; background: white}
+        /*标题两边短线*/
+        .short-line{ display: block; width: 70px; height: 20px; border-bottom: 2px #eeeeee solid;}
+        .float-left{float: left}
+        .float-right{float: right}
+        /*圆形边框 */
+        .border-radius{border-radius:50%; border:7px #e3e3e3 solid;}
+        .about-image{margin-top: 4em; width: 40%}
+        .icon{padding-top:8px;}
+        .icon-text{line-height: 1.8em;color:#b6b6b6;}
+    </style>
+</head>
+
+<body>
+<nav class="uk-width-1-1 menu">
+    <div class="menu_bg"></div>
+    <ul>
+        <li class="active">产品系列</li>
+        <!--<li onclick="goUrl('http://anymood2016.taobao.com')">产品购买</li>-->
+        <li onclick="goUrl('index.html')">首页</li>
+    </ul>
+</nav>
+<div class="uk-width-1-1 uk-text-center item" style="" id="i1">
+
+    <div><div class="uk-container-center"  data-uk-scrollspy="{cls:'uk-animation-scale-up', repeat: true, delay:500}" style="margin-top:20%;width:12em"><img src="images/logo.png" /></div></div>
+</div>
+<div  id="i2">
+    <div class="uk-width-1-2 uk-container-center uk-text-center item1" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.my-class', delay:500}">
+        <img src="images/shanyi.png" class="about-image" /> <br />
+        <img class="my-class uk-border-circle border-radius about-image" style="" src="images/about1.png" alt="">
+
+        <h4 class="about_sub_tiltle my-class">我们的BB霜<br />包含着对男士满满的善意<br />For man for all man</h4>
+    </div>
+
+
+    <div class="uk-width-1-2 uk-container-center uk-text-center item1" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.my-class', delay:500}">
+        <img src="images/linggan.png" class="about-image" /> <br />
+        <img class="my-class uk-border-circle border-radius about-image " style="" src="images/about2.png" width="500" alt="">
+
+        <h4 class="about_sub_tiltle my-class">我们为男人而生，为所有男人而生<br />我们的灵感来自于鹅卵石。跟石头相比它更精致也更少棱角，<br />但它的硬度、纹理和脉络依旧充满着磐石的厚重和阳刚。<br/>爱美原本就是人权的一种。做更精致的男人，并不代表要抛弃自身的硬朗气息，<br/>并不该因此而受到更多的嘲笑。</h4>
+    </div>
+
+
+    <div class="uk-width-1-2 uk-container-center uk-text-center item1" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.my-class', delay:500}">
+        <img src="images/yanzhi.png" class="about-image" /> <br />
+        <img class="my-class uk-border-circle border-radius about-image " style="" src="images/about3.png" width="500" alt="">
+
+        <h4 class="about_sub_tiltle my-class">我们关心你的颜值，更关心你的颜直<br />HUGESMEE选用更男人的配方，倡导更自然的妆感，缔造更硬朗的轮廓。<br />我们为你吸引而来的每一次关注，都不会有额外的心理负担。</h4>
+    </div>
+
+
+    <div class="uk-width-1-2 uk-container-center uk-text-center item1" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.my-class', delay:500}">
+        <img src="images/zhuanzhu.png" class="about-image" /> <br />
+        <img class="my-class uk-border-circle border-radius about-image " style="" src="images/about4.png" width="500" alt="">
+
+        <h4 class="about_sub_tiltle my-class">我们不在乎成本，专注服务男士<br />行业内的朋友偶尔交流，他们惊叹于我们前所未见的产品成本，<br />也为我们专注男士的匠人精神深深折服。</h4>
+    </div>
+    <hr />
+    <div class="uk-grid uk-text-left uk-margin-top bottom" style="padding:40px 0 40px 0; background:#FAFAFA">
+        <div class="uk-width-1-3">
+            <div class="uk-grid uk-grid-small">
+                <div class="uk-width-1-3 uk-text-right icon">
+                    <span><img src="images/icon-phone.png" style="width:35px"></span>
+                </div>
+                <div class="uk-width-2-3 icon-text" >客户服务<br />电话： <br />samuel.wang@hugesmee.com</div>
+
+            </div>
+        </div>
+        <div class="uk-width-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-4 uk-text-right icon">
+                    <span><img src="images/icon-2.png" style="width:45px"></span>
+                </div>
+                <div class="uk-width-3-4 icon-text">品牌/BD/广告/市场合作/ 媒体联系<br />
+                    samuel.wang@hugesmee.com</div>
+
+            </div>
+        </div>
+        <div class="uk-width-1-3">
+            <div class="uk-grid">
+                <div class="uk-width-1-3 uk-text-right icon">
+                    <span><img src="images/icon-3.png" style="width:40px"></span>
+                </div>
+                <div class="uk-width-2-3 icon-text">经销/电商合作<br />samuel.wang@hugesmee.com</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-1-1 uk-grid uk-text-center uk-margin-top bottom" style="padding-top:40px;">
+        <div class="uk-width-1-4">微信:<a href="#wechat" data-uk-modal>HUGESMEE</a></div>
+        <div class="uk-width-1-4">微博:</div>
+        <div class="uk-width-1-4">合作:<a href="mailto:samuel.wang@hugesmee.com">samuel.wang@hugesmee.com</a></div>
+        <div class="uk-width-1-4">电话:</div>
+    </div>
+
+    <div class="uk-width-1-1 uk-text-center uk-margin-top bottom" style="padding:30px 0 60px 0;">
+        沪ICP备17020102号&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">工信部</a>
+    </div>
+</div>
+
+
+<!-- 模态对话框 -->
+<div id="wechat" class="uk-modal">
+    <div class="uk-modal-dialog uk-modal-dialog-lightbox uk-text-center">
+        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+        <img src="images/qrcode.jpg" alt=""><br />
+        <h2>扫码关注我们微信服务号</h2>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var sceneBack = document.getElementById('i1'),
+            sceneCenter = document.getElementById('i2');
+
+    var old_top1 = 0;
+    old_top2 = 10;
+
+    addEvent(window,'scroll',onScroll);
+    onScroll();
+
+    function onScroll(e){
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        sceneBack.style.top = old_top1+scrollTop*.9+'px';
+        sceneCenter.style.top = old_top2+scrollTop*.2+'px';
+    }
+
+    function addEvent(eventTarget, eventType, eventHandler) {
+        if (eventTarget.addEventListener) {
+            eventTarget.addEventListener(eventType, eventHandler, false);
+        } else {
+            if (eventTarget.attachEvent) {
+                eventType = "on" + eventType;
+                eventTarget.attachEvent(eventType, eventHandler);
+            } else {
+                eventTarget["on" + eventType] = eventHandler;
+            }
+        }
+    }
+    function goUrl(url){
+        window.location.href=url;
+    }
+</script>
+
+</body>
+</html>

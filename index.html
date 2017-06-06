@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta content="Anymood是北京任何情绪文化传播有限公司旗下的男士护肤品牌，以自然服帖的男士修颜产品闻名。团队主创来自于著名化妆品电商上市公司,秉承For Man For All Man的研发理念，依托世界顶级化妆品制造商Intercos，以及瑞士CRB研发中心，坚信爱美不是女权，是人权，致力于打造真正适合男性的护肤产品。比轩谛好,比尊蓝好，比欧莱雅好" name="Description" />
+    <meta content="男士BB霜,男士洁面乳,男士护肤,男士化妆,勇敢在一起,小麦色,裸妆" name="Keywords" />
+    <meta content="Anymood男士口牌下目前有调色BB霜，单色BB霜，补妆吸油纸，男士洁面膏等男士专业产品，发布了勇敢在一起品牌形象视频" name="searchtitle" />
+    <meta content="all" name="robots" />
+    <meta name="renderer" content="webkit">
+    <title>HUGESMEE官网—男士不凡生活新主张</title>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="css/uikit.almost-flat.min.css" />
+    <link rel="stylesheet" href="css/components/sticky.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/components/sticky.min.js"></script>
+    <script src="js/components/parallax.min.js"></script>
+    <style type="text/css">
+        body{
+            /*font-family: "黑体"*/
+        }
+        .menu_bg{
+            position: fixed;
+            width:100%;
+            height: 60px;
+            z-index: 998;
+            background: white;
+            filter:alpha(opacity=60);
+            -moz-opacity:0.6;
+            -khtml-opacity: 0.6;
+            opacity: 0.6;
+            /*border:1px red  solid;*/
+        }
+        .menu ul{
+            position: fixed;
+            right:0;
+            top:0;
+            padding:0 0 0 0;
+            height: 30px;
+            /*background: #EEEEEE*/
+            width: 100%;
+            z-index: 999;
+            /*background: #CCCCCC;*/
+        }
+        .menu ul li{
+            float:right;
+            width: 100px;
+            list-style: none;
+            text-align: center;
+            padding:5px;
+            margin-right:15px ;
+        }
+        .menu ul li:hover{
+            border-bottom: 2px black solid;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .active{
+            border-bottom: 2px black solid;
+        }
+        .item {
+            position: relative;
+            /*padding-bottom: 47.97%;
+            width: 100%;
+            height: 0;
+            background:url(images/banner.png)  fixed center center no-repeat;
+            background-size:cover;
+            border:1px white solid;
+            background-attachment:scroll;
+            z-index: -3;*/
+        }
+        .sp {
+            /*position: relative;
+            padding-bottom: 47.97%;
+            width: 100%;
+            height: 0;
+            background:url(images/sp_bj.png)  fixed center center no-repeat;
+            background-size:cover;
+            border:1px white solid;
+            margin-bottom: 100px;*/
+            width: 100%;
+            height: 600px;
+            background:url(images/sp_bj.png)  fixed center center no-repeat;
+        }
+        .logo{
+            position: relative;
+            margin-top: 300px;
+            width: 150px
+        }
+        .item1{
+            height:auto;
+            background: #FFFFFF;
+            padding:100px 0 170px 0 ;
+        }
+        .product_title{
+            color:#666666;
+            margin-top: 350px;
+            font-size: 1.85em;
+            font-weight: bold;
+        }
+        .product_sub_tiltle{
+            color:#999999;line-height:30px;font-size: 16px;
+        }
+        .mb{
+            -webkit-text-shadow:#F9F9F9 1px 0 0,#F9F9F9 0 1px 0,#F9F9F9 -1px 0 0,#F9F9F9 0 -1px 0;
+            -moz-text-shadow:#F9F9F9 1px 0 0,#F9F9F9 0 1px 0,#F9F9F9 -1px 0 0,#F9F9F9 0 -1px 0;
+            text-shadow:#F9F9F9 1px 0 0,#F9F9F9 0 1px 0,#F9F9F9 -1px 0 0,#F9F9F9 0 -1px 0;
+            *filter: Glow(Color=#000, Strength=1);
+        }
+        .sp_player{
+            /*margin-top: 4em;*/
+        }
+        .bottom{
+            color:#707070;
+        }
+        .price{font-size: 4em;color:#bb9f77;}
+        .button{width: 12%;background: black;height: 40px;line-height: 40px;color:white;float: auto;margin-top: 30px;cursor: pointer;}
+        #i1{z-index: 0;position: relative;}
+        #i2{z-index: 997;height: auto;position: relative; background: white}
+    </style>
+</head>
+
+<body>
+
+<nav class="uk-width-1-1 menu">
+    <div class="menu_bg"></div>
+    <ul>
+        <li onclick="goUrl('about.html')">产品系列</li>
+        <!--<li onclick="goUrl('http://anymood2016.taobao.com')">品牌专区</li>-->
+        <li class="active">首页</li>
+    </ul>
+</nav>
+<div class="uk-width-1-1 uk-text-center item" style="" id="i1">
+    <a href="https://item.taobao.com/item.htm?id=524779772083" target="_blank"><img src="images/banner.png"></a>
+</div>
+<div  id="i2">
+    <div class="uk-width-1-1 uk-text-center item1" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.my-class', delay:500}">
+        <a href="https://item.taobao.com/item.htm?id=524767215201" target="_blank"><img class="my-class" src="images/bb.png" width="" alt=""></a>
+        <img src="images/KV3.jpg" alt="" width="">
+        <!-- <h1 class="product_title my-class">用我们的BB霜<br />你可以特别自豪地说：老娘是直男</h1>
+        <h4 class="product_sub_tiltle my-class"> 意大利化妆品名厂莹特丽出品，更细腻的粉质，更清爽的质地，<br />更适合男士的专属BB霜配方<br />自然妆感，遮盖瑕疵，不遮男人味。轻轻一抹，即刻拥有好肤色</h4> -->
+    </div>
+    <hr />
+    <div class="uk-width-1-1 uk-text-center item1">
+        <a href="https://item.taobao.com/item.htm?id=524811928763" target="_blank"><img src="images/jm.png" width="200" alt=""></a>
+        <br>
+        <img src="images/KV5.jpg" alt="" width="">
+        <!-- <h1 class="product_title">用好产品，释放对男士满满的善意</h1>
+        <h4 class="product_sub_tiltle">世界顶级研发中心瑞士CRB专注研发，意大利莹特丽品质出品，国际超<br />一线品牌的生产+研发配置！<br />温和的氨基酸配方，温和带走肌肤污垢，不破坏肌肤酸碱平衡，长期使<br />用肌肤恢复健康态</h4> -->
+    </div>
+    <hr />
+    <div class="uk-width-1-1 uk-text-center item1">
+        <a href="https://item.taobao.com/item.htm?id=524801858232" target="_blank"><img src="images/xz.png" width="200" alt=""></a>
+        <br>
+        <img src="images/KV7.jpg" alt="" width="">
+        <!-- <h1 class="product_title">早xie在我们这边是褒义词<br />它指的是这款卸妆湿巾的卸妆速度</h1>
+        <h4 class="product_sub_tiltle">男士妆容较淡，不需要太强的卸妆力来增加肌肤负担，anymood针对男<br />士妆容特点专注研发BB霜、粉底液、眉粉等男士彩妆都能轻松卸除。更<br />多维他命的添加，卸妆同时更修复。</h4> -->
+    </div>
+    <hr />
+    <div class="uk-width-1-1 uk-text-center sp uk-vertical-align uk-height-1-1" id="i3">
+        <!-- <div class="uk-width-1-2 uk-container-center uk-vertical-align-middle sp_player"><embed src="http://player.youku.com/player.php/sid/XMTM5NDIyNDY4OA==/v.swf" allowFullScreen="true" quality="high" width="640" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed></div> -->
+    </div>
+    <hr />
+    <div class="uk-width-1-1 uk-grid uk-text-center uk-margin-top bottom" style="padding-top:40px;">
+        <div class="uk-width-1-4">微信:<a href="#wechat" data-uk-modal>HUGESMEE</a></div>
+        <div class="uk-width-1-4">微博:</div>
+        <div class="uk-width-1-4">合作:<a href="mailto:samuel.wang@hugesmee.com">samuel.wang@hugesmee.com</a></div>
+        <div class="uk-width-1-4">电话:</div>
+    </div>
+
+    <div class="uk-width-1-1 uk-text-center uk-margin-top bottom" style="padding:30px 0 60px 0;">
+         沪ICP备17020102号&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">工信部</a>
+    </div>
+</div>
+
+
+<!-- 模态对话框 -->
+<div id="wechat" class="uk-modal">
+    <div class="uk-modal-dialog uk-modal-dialog-lightbox uk-text-center">
+        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+        <img src="images/qrcode.jpg" alt=""><br />
+        <h2>扫码关注我们微信服务号</h2>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var sceneBack = document.getElementById('i1'),
+            sceneCenter = document.getElementById('i2');
+    // var i3 = document.getElementById('i3');
+
+    var old_top1 = 0;
+    old_top2 = 10;
+    // var old_top3 = 4000;
+
+    addEvent(window,'scroll',onScroll);
+    onScroll();
+
+    function onScroll(e){
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        sceneBack.style.top = old_top1+scrollTop*.9+'px';
+        sceneCenter.style.top = old_top2+scrollTop*.3+'px';
+        // i3.style.top = old_top3+scrollTop*.5+'px';
+    }
+
+    function addEvent(eventTarget, eventType, eventHandler) {
+        if (eventTarget.addEventListener) {
+            eventTarget.addEventListener(eventType, eventHandler, false);
+        } else {
+            if (eventTarget.attachEvent) {
+                eventType = "on" + eventType;
+                eventTarget.attachEvent(eventType, eventHandler);
+            } else {
+                eventTarget["on" + eventType] = eventHandler;
+            }
+        }
+    }
+    function goUrl(url){
+        window.location.href=url;
+    }
+</script>
+
+</body>
+</html>
