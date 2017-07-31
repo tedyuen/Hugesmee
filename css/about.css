@@ -1,0 +1,37 @@
+.new-banner{
+  width: 1920px;
+  height:540px;
+  background-image: url('../images/stone.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+}
+
+.clear {width: 0px;height: 0px;font-size: 0px;clear:both}
+
+.product-frame {
+  width: 1200px;
+  margin: auto;
+  height:auto;
+  position: relative;
+  text-align: center;
+}
+
+.product-item {
+  float:left;
+  padding: 2%;
+  width:300px;
+  margin: 2%;
+  border: 1px solid #606060;
+  text-align: center;
+}
+.product-top {
+  width:300px;
+  height:300px;
+}
+.product-top img {
+  max-width: 100%;
+}
+.product-bottom {
+  text-align: center;
+}
