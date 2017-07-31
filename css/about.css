@@ -25,6 +25,12 @@
   border: 1px solid #606060;
   text-align: center;
 }
+.product-item-n {
+  width:300px;
+  height:400px;
+  margin: 40px;
+  float: left;
+}
 .product-top {
   width:300px;
   height:300px;
